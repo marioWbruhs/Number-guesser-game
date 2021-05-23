@@ -21,7 +21,7 @@ fn main() {
         println!("You guessed: {}", guess); //prints the guess
 
         match (guess as i8).cmp(&secret_number) { 
-            /*guessing algirithm:
+            /*guessing algorithm:
                 I used binary search to find the correct number
                 If the guess is smaller than the secret_number variable, i add (secret_number_max_bound - guess) / 2 to the guess
                 If its smaller, i check if its an even number. If it is, i just devide it by 2. If its not, i devide it by 2 and add 1 to it
